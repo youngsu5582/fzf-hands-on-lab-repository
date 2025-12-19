@@ -1,0 +1,19 @@
+music
+musicbox
+musiclive
+MUSIC_room
+music.mp3.backup
+music/rock/fire.mp3
+music/rock/anthem.mp3
+music/classic/wild.mp3
+music/pop/wild world.flac
+music/pop/wilder days.mp3
+docs/music-theory.pdf
+videos/music_story.mp4
+live.music
+notes/must-i-cook.md
+project/data/data_analysis_report_v2.docx
+config/server-log-backup.zip
+dev/src/UtilClass.java
+todo.txt
+music-scores/Beethoven/symphony-no-5.pdf

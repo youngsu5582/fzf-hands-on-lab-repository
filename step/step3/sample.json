@@ -1,0 +1,17 @@
+{
+  "loggers": {
+    "com.mycorp.Controller": {
+      "configuredLevel": "DEBUG",
+      "effectiveLevel": "DEBUG"
+    },
+    "com.mycorp.ServiceA": {
+      "configuredLevel": null,
+      "effectiveLevel": "INFO"
+    },
+    "org.springframework.web": {
+      "configuredLevel": "WARN",
+      "effectiveLevel": "WARN"
+    }
+  },
+  "levels": ["TRACE", "DEBUG", "INFO", "WARN", "ERROR", "FATAL", "OFF"]
+}
