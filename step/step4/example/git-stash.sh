@@ -1,0 +1,41 @@
+git-stash() {
+  local stash_list
+  stash_list=$(git stash list --pretty=format:$'%gd\t%cr\t%s')
+
+  local selected_stash
+  selected_stash=$(echo "$stash_list" \
+      | fzf --reverse \
+          --layout="reverse" \
+          --prompt="Select Stash > " \
+          --header="Stash ID     |    Time Ago          | Message" \
+          --preview="
+              echo '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+              echo '📋 Stash: {1}'
+              echo '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+              echo
+              echo '📊 Statistics:'
+              git stash show {1} --stat --color=always
+              echo
+              echo '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+              echo '🔍 Detailed Changes:'
+              echo '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'
+              git stash show -p {1} --color=always
+          ")
+
+  local stash_id message
+  stash_id=$(echo "$selected_stash" | cut -f1)
+  message=$(echo "$selected_stash" | cut -f3)
+
+  echo "✓ $stash_id ($message) 가 선택되었습니다!"
+
+  echo "(a)pply, (p)op, (d)rop 를 입력해주세요."
+  read -r action
+  action=${action:0:1}
+  echo
+  case "$action" in
+      a|A) git stash apply "$stash_id" ;;
+      p|P) git stash pop "$stash_id" ;;
+      d|D) git stash drop "$stash_id" ;;
+      *)   echo "Cancelled." ;;
+  esac
+}
