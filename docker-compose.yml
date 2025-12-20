@@ -1,0 +1,14 @@
+services:
+  lab_shell:
+    # Dockerfile이 있는 현재 디렉토리를 지정하여 이미지를 빌드합니다.
+    build: .
+    # 컨테이너 이름을 명시적으로 지정하여 찾기 쉽게 합니다.
+    container_name: fzf_shell
+    # 컨테이너 시작 시 Zsh 쉘로 바로 접근합니다.
+    command: /usr/bin/zsh
+    # 컨테이너를 실행 상태로 유지하고 터미널 접속을 허용합니다.
+    stdin_open: true # -i
+    tty: true        # -t
+    # 현재 디렉토리를 컨테이너에 마운트하여 실시간 반영
+    volumes:
+      - .:/app

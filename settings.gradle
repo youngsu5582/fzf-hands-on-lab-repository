@@ -1,0 +1,3 @@
+rootProject.name = 'fzf-hands-on-lab-repository'
+
+include 'sample-server'
