@@ -1,3 +1,10 @@
+# 환경 설정 문서: 
+
+# 행사장 WIFI 접속: https://buly.kr/GvoJUyY (구성원 ID: robot.hoony@woowahan.com)
+**오프라인 참가자만 신청해 주세요.**
+
+---
+
 # Step 0: 환경 설정
 
 > 이 문서는 fzf 핸즈온 실습을 위한 환경 설정 가이드입니다.
