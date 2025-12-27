@@ -10,6 +10,7 @@
 # Git Clone
 ```
 git clone https://github.com/youngsu5582/fzf-hands-on-lab-repository.git
+cd fzf-hands-on-lab-repository
 ```
 
 # Step 0: 환경 설정
