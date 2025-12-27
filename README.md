@@ -6,7 +6,7 @@
 
 ---
 
-# 환경 설정 문서: https://buly.kr/9MRjJbB
+# 환경 설정 문서: https://buly.kr/APwHCro
 
 # 행사장 WIFI 접속: https://buly.kr/GvoJUyY (구성원 ID: robot.hoony@woowahan.com)
 **오프라인 참가자만 신청해 주세요.**
