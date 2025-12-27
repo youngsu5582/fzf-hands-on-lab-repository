@@ -1,7 +1,6 @@
 # 환경 설정 문서: https://buly.kr/BpGL3Qp
 
-# 행사장 WIFI 접속 (https://buly.kr/GvoJUyY)
-- 와이파이: https://buly.kr/GvoJUyY
+# 행사장 WIFI 접속 (가이드: https://buly.kr/Gvoy
 - 네트워크 이름: woowanet.join
 - 연결 주소: woowanet.woowa.in
 - 구성원 AD 계정: robot.hoony
