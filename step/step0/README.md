@@ -7,7 +7,10 @@
 
 ---
 
-# Step 0: 환경 설정
+# Git Clone
+```
+git clone https://github.com/youngsu5582/fzf-hands-on-lab-repository.git
+``` Step 0: 환경 설정
 
 > 이 문서는 fzf 핸즈온 실습을 위한 환경 설정 가이드입니다.
 
